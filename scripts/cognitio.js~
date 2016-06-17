@@ -22,7 +22,24 @@ app.controller('specializationCtrl',function($scope){
 		"name":"Machine Learning",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Excel to MySQL: Analytic Techniques for Business",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Business Analytics",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Business Foundations",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Data Structure and Algorithms",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
@@ -43,7 +60,24 @@ app.controller('popularCtrl',function($scope){
 		"name":"R Programming",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Functional Programming Principles in Scala",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"The Data Scientist’s Toolbox",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Algorithms, Part I",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Calculus One",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
@@ -64,7 +98,24 @@ app.controller('topRatedCtrl',function($scope){
 		"name":"HTML, CSS, and Javascript for Web Developers",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Финансовые рынки и институты (Financial Markets and Institutions)",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Negociações de sucesso: estratégias e habilidades essenciais (em Português)",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Music Business Foundations",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Комбинаторика для начинающих",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
@@ -85,7 +136,24 @@ app.controller('dataScienceCtrl',function($scope){
 		"name":"Machine Learning",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Critically Evaluate Social Science Research and Analyze Results Using R",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Master Statistics with R",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Business Foundations",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Business Analytics",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
@@ -106,7 +174,24 @@ app.controller('businessCtrl',function($scope){
 		"name":"Financial Markets",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Solve Real Business Problems",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Drive Customer Behavior Online",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Build Business and Financial Models",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Design Thinking for Innovation",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
@@ -127,7 +212,24 @@ app.controller('CSCtrl',function($scope){
 		"name":"Fundamentals of Computing",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Data Structure and Algorithms",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Full Stack Web Development",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Develop Powerful Interactive Software",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Algorithms: Design and Analysis, Part 1",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
@@ -148,7 +250,24 @@ app.controller('socialScienceCtrl',function($scope){
 		"name":"Primeros Auxilios Psicológicos (PAP)",
 		"img": "http://www.wordwrite.co.uk/wp-content/uploads/2015/03/bigstock-Online-Education-49808651.jpg"
 	}]
-	
+	// },
+	// {
+	// 	"name":"Understanding Memory: Explaining the Psychology of Memory through Movies",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Aprender",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"The Global Financial Crisis",
+	// 	"img": ""
+	// },
+	// {
+	// 	"name":"Model Thinking",
+	// 	"img": ""
+
+	// }]
 	console.log($scope.specializations);
 });
 
