@@ -1,0 +1,36 @@
+<div id="myModal" class="modal">
+	<div class="modal-content" data-toggle="myModal">
+		<span class="close">×</span>
+		<div class="login">
+			<span style="cursor: pointer" class="sprite close fr" ng-click="logincancel()"></span>  
+			<button class="loginbutton fbcolor c-white" type="button" ng-click="fblogin()">​
+				<div class="buttontext">
+					<span class="sprite modal-fbicon fl"></span>
+					<span>Login with Facebook</span>
+				</div>
+			</button>
+			<form name="myForm" class="formheight">
+				<div class="loginbutton m-inputwrap black">
+					<input type="text" ng-model="fieldsLogin.email" placeholder="Email or Phone">
+					<div class="sprite fr dpicon">
+					</div>
+				</div>
+				<div class="loginbutton m-inputwrap black">
+					<input type="password" ng-model="fieldsLogin.password" placeholder="Password">
+					<div class="sprite fr pswdicon">
+					</div>
+				</div>
+				<div class="submit1">
+					<input class="loginbutton m-login transition" type="submit" value="Login" ng-click="onSubmit()">
+				</div>
+			</form>
+			<div class="c-red">
+				<div class="login-or-signup">
+				</div>
+				<div class="forgot-password" ng-click="forgotPassword()">Forgot Password?</div>
+				<div class="grey">OR</div>
+				<button class="loginbutton m-signup transition signupMargin" ng-click="signUp()">Signup</button>
+			</div>
+		</div>
+	</div>
+</div>

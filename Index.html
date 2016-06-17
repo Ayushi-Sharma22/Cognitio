@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="cognitioApp">
+<head>
+
+	<!-- Metadata -->
+	<meta charset="utf-8">
+	<meta name="theme-color" content="#00b12d">
+  <meta content="Ductio Cognitio - Learn courses from Top Universities | Cognitio">
+ 	<meta content="en_US">
+ 	<meta name="description" content="Mocking Coursera Website">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<title>Ductio Cognitio</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+	<!-- Angular -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+
+	<!-- Import -->
+	<link rel="stylesheet" type="text/css" href="styles/cognitio.css">
+	<script type="text/javascript" src="scripts/cognitio.js"></script>
+
+</head>
+<body ng-controller="MyCtrl">
+	
+	<div id="main">
+		<div id="">
+			<div class="header PageHeader">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-2 logo"></div>
+					<div class="col-md-1 logo3"></div>
+					<div class="col-md-1"></div>
+					<div class="col-md-3">
+						<div class="inner-addon left">
+							<span class="search-wrapper">
+								<a class="catalog-button">
+									<span class="catalog-icon glyphicons glyphicons-list"></span>
+									<span class="textcolor">Catalog</span>
+								</a>
+								<form class="search-form" action="" method="get">
+									<span class="search-input-container">
+										<span class="typeahead" style="position: relative; display: inline-block;">
+											<input type="text" name="Catalog" class="search-input-container search-catalog-input " style="position: relative; vertical-align: top; background-color: transparent;" placeholder="Search catalog">
+											<span class="search-icon glyphicon glyphicon-search"></span>
+										</span>
+										
+									</span>
+								</form>
+							</span>
+						</div>
+					</div>
+					<div class="col-md-1"></div>
+					<a href="https://www.google.com" target="_blank"><div class="col-md-1 header-middle-30 textcolor">Institutions</div></a>
+					<a href="https://www.google.com" target="_blank" ng-click="login('sm')" ><div class="col-md-1 header-middle-30 textcolor">Log In</div></a>
+					<div class="col-md-1 header-middle-20">
+						<button class="btn btn-primary sharp" id="myBtn" data-template="modal.html" >
+							Sign Up
+							</div>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div>
+				<section class="home-page-banner" title="Learn courses from Top Universities"></section>
+				<center>
+					<div class="home-page-search-box">
+						<div class="first-row">
+							<div class="search">
+								<input type="text" value="" ng-model="course" class="form-control search-input" placeholder="Search Any Topic" autocomplete="off">
+								<button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search" onclick="search(course)"></span></button>
+							</div>
+						</div>
+					</div>
+				</center>
+				<section class="univ-logo">
+					<div class="row">
+						<div class="col-md-1"></div>
+						<div class="col-md-10">
+							<img src="sprite/Penn-logo.png" class="img-padding">
+							<img src="sprite/jhu_logo.png" class="img-padding">
+							<img src="sprite/U-M_bmp.png" class="img-padding">
+							<img src="sprite/stanford.png" class="img-padding">
+							<img src="sprite/UC-San-Diego-blue--gold.png" class="img-padding">
+							<img src="sprite/Duke_University_Logo.png" class="img-padding">
+						</div>
+						<div class="col-md-1"></div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">TOP SPECIALIZATIONS</h1></center>
+					<div class="row specialization-div" ng-controller="specializationCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+						{{specialization.name}}
+						
+						</div>
+					</div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">POPULAR COURSES</h1></center>
+					<div class="row specialization-div" ng-controller="popularCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+							{{specialization.name}}
+						</div>
+					</div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">TOP RATED COURSES</h1></center>
+					<div class="row specialization-div" ng-controller="topRatedCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+							{{specialization.name}}
+						</div>
+					</div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">DATA SCIENCE</h1></center>
+					<div class="row specialization-div" ng-controller="dataScienceCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+						
+							{{specialization.name}}
+						</div>
+					</div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">BUSINESS</h1></center>
+					<div class="row specialization-div" ng-controller="businessCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+							{{specialization.name}}
+						</div>
+					</div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">COMPUTER SCIENCE</h1></center>
+					<div class="row specialization-div" ng-controller="CSCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+							{{specialization.name}}
+						</div>
+					</div>
+					</div>
+				</section>
+				<section >
+					<center><h1 class="specialization-heading">SOCIAL SCIENCES</h1></center>
+					<div class="row specialization-div" ng-controller="socialScienceCtrl" >
+					<div ng-repeat="specialization in specializations" class="col-md-3">
+						<div class="specialization-box">
+						<div class="div-img">
+							<img src={{specialization.img}} style="width:100%; height:100%;">
+						</div>
+							{{specialization.name}}
+						</div>
+					</div>
+					</div>
+				</section>
+				<center>
+					<button class="btn btn-primary sharp margin-bottom">See All Categories</button>
+				</center>
+			</div>
+
+			<footer class="footer-design">
+				<div class="row">
+					<div class="col-md-5">
+					<ol  style="list-style-type:none">
+						<li><div class="footer-logo"></div></li>
+						<li><p>Cognitio provides universal access to the world’s best education, partnering with top universities and organizations to offer courses online.</p></li>
+					</ol>
+					</div>
+					<div class="col-md-1 footer-orientation">
+						<ul>
+							COMPANY
+							<li><a href="https://www.google.com" target="_blank">About</a></li>
+							<li><a href="https://www.google.com" target="_blank">People</a></li>
+							<li><a href="https://www.google.com" target="_blank">Leadership</a></li>
+							<li><a href="https://www.google.com" target="_blank">Careers</a></li>
+						</ul>
+					</div>
+					<div class="col-md-1 footer-orientation">
+						<ul>
+							FRIENDS
+							<li><a href="https://www.google.com" target="_blank">Partners</a></li>
+							<li><a href="https://www.google.com" target="_blank">Companies</a></li>
+							<li><a href="https://www.google.com" target="_blank">Programs</a></li>
+							<li><a href="https://www.google.com" target="_blank">Developers</a></li>
+							<li><a href="https://www.google.com" target="_blank">Volunteer</a></li>
+						</ul>
+					</div>
+					<div class="col-md-1 footer-orientation">
+						<ul>
+							CONNECT
+							<li><a href="https://www.google.com" target="_blank">Google+</a></li>
+							<li><a href="https://www.google.com" target="_blank">Twitter</a></li>
+							<li><a href="https://www.google.com" target="_blank">Facebook</a></li>
+							<li><a href="https://www.google.com" target="_blank">Blog</a></li>
+							<li><a href="https://www.google.com" target="_blank">Tech Blog</a></li>
+						</ul>
+					</div>
+					<div class="col-md-1 footer-orientation">
+						<ul>
+							MORE
+							<li><a href="https://www.google.com" target="_blank">Terms</a></li>
+							<li><a href="https://www.google.com" target="_blank">Privacy</a></li>
+							<li><a href="https://www.google.com" target="_blank">Help</a></li>
+							<li><a href="https://www.google.com" target="_blank">Press</a></li>
+							<li><a href="https://www.google.com" target="_blank">Contact</a></li>
+							<li><a href="https://www.google.com" target="_blank">Directory</a></li>
+						</ul>
+					</div>
+					<div class="col-md-2"></div>
+				</div>
+			</footer>
+		</div>
+	</div>
+</body>
+</html>
